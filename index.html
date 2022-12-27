@@ -111,5 +111,55 @@
  		  </script>
           <button type="button" onclick="myFunction()">Igual que si apachas aquí</button>
         </div>
+	<hr>
+        <div clas="computer code elements">
+        <!--esto es para tener un output como de computadora-->
+          <h3>Ejemplo de code</h3>
+          <code>
+          	x=3; y=4; z=x+2y+3;
+          </code>
+        <!--Ejemplo para definir variables-->
+          <h3>Ejemplo de variables</h3>
+          <p>La fórmula para la fuerza es <var>F</var>=<var>m</var>*<var>a</var>. En donde <var>F</var> equivale a fuerza, <var>m</var> a la masa y <var>a</var> a la aceleración.</p>
+        </div>
+        <hr>
+        <div class="Formularios">
+        <!--Ahora vamos a crear algunos formularios como ejemplo de lo que se puede utilizar-->
+          <h3>Formularios y tipos que se pueden crear</h3>
+          <form action="/form-answeres.php" target="_self" method="POST">
+        <!-- texto simple-->
+        	<label for="userName">Nombre: </label>
+            <input type="text" id="userName" name="userName"><br>
+            <label for="userLast">Apellido: </label>
+            <input type="text" id="userLAst" name="userLast"><br><br>
+        <!--radio, es para seleccionar una de muchas opciones-->
+        	<p>Selecciona tu género</p>
+            <input type="radio" id="fem" name="genero" value="Femenino">
+            <label for="fem">Femenino</label><br>
+            <input type="radio" id="mas" name="genero" value="Masculino">
+            <label for="mas">Masculino</label><br>
+            <input type="radio" id="noQuiero" name="genero" value="Prefiero no contestar">
+            <label for="noQuiero">Prefiero no contestar</label>
+        <!--Checkbox puede seleccionar 0 a todos-->
+        	<p>Selecciona tus bebidas de café preferidas</p>
+            <input type="checkbox" id="latte" name="tipodebebida" value="Latte">
+            <label for="latte">Latte</label>
+            <input type="checkbox" id="cappuccino" name="tipodebebida" value="Cappuccino">
+            <label for="cappuccino">Cappuccino</label>
+            <input type="checkbox" id="americano" name="tipodebebida" value="Americano">
+            <label for="americano">Americano</label>
+            <input type="checkbox" id="mocaccino" name="tipodebebida" value="Mocaccino">
+            <label for="mocaccino">Mocaccino</label>
+        <!-- Select permite crear una drop-list para seleccionar dentro de algunas opciones-->
+       		<br><br><label for="tipoDeLeche">Selecciona con que tipo de leche te gusta tu café:</label>
+            <select id="tipoDeLeche" name="tipoDeLeche">
+              <option value="LecheEntera" selected>Leche entera</option>
+              <option value="LecheDescremada">Leche descremada</option>
+              <option value="LecheDeslactosada">Leche deslactosada</option>
+              <option value="LecheSoya">Leche de soya</option>
+              <option value="LecheAlmendra">Leche de almendra</option>
+            </select>
+          </form>  
+        </div>
     </body>
 </html>
