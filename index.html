@@ -159,7 +159,33 @@
               <option value="LecheSoya">Leche de soya</option>
               <option value="LecheAlmendra">Leche de almendra</option>
             </select>
-          </form>  
-        </div>
+	  <!--allow to select multiple options with a command-->
+     	<div class="Selecion multiple">
+        <br>
+        <p> Selecciona todas las opciones que quieras</p>
+        <select id="extras" name="extras" size="5" multiple>
+          <option value="crema batida">Crema Batida</option>
+          <option value="Vanilla">Vanilla</option>
+          <option value="Avellana">Avellana</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="caramelo">Caramelo</option>
+        </select>
+        <br>
+        <p>Mantener presiondato Ctrl(windows)/Command/(Mac)para seleccionar varios</p>
+     <!--Hacer un formulario con una sección separada-->
+        <div class="Formulario con formato separado">
+          <fieldset>
+          	<legend><strong>Datos de entrega</strong></legend>
+            <label for="direccion">Dirección de entrega</label>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="zona">Zona de entrega</label>
+            <input type="text" id="zona" name="zona"><br>
+            <label for="municipio">Municipio</label>
+            <input type="text" id="municipio" name="municipio"><br>
+            <label for="departamento">Departamento</label>
+            <input type="departamento" name="departamento"><br>
+          </fieldset>
+        </form> 
+      </div>
     </body>
 </html>
