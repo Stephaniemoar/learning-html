@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+	  body {background-color: AliceBlue;}
+   	  h1   {color: RoyalBlue;font-family: verdana, sans-serif; font-size:200%;}
+      h3   {color: SteelBlue;}
+      #intro {color: DarkSlateGray; border: 2px solid black;padding: 30px}
+      #cita {border: 2px solid powderblue; margin: 20px;}
+      table {border-collapse: collapse; width: 50%;}
+	  td, th {border: 1px solid #07688C; text-align: left; padding: 8px; text-align: center;}
+	  tr:nth-child(even) {background-color: #07688C; color:white;}
+	</style>
+    <!-- el #intro hace referencia a un "id" que está en el documento-->
+  </head>
+    <body>
+        <h1>El café en Guatemala</h1>
+        <!--To use a image as a link, put the image inside de <a> element-->
+        <a href="https://www.anacafe.org/" target="_blank">
+        <!-- para abrir el link en otra tab, se usar target="_blank"-->
+          <img src="https://www.anacafe.org/uploads/image/8abc9fc7666f4619b55f79b68060019d/_Caficultura-de-Guatemala_3.jpg" alt="Café de Guatemala" height="500px" width="900px">
+        </a>
+        <p id="intro" style="text-align:justify;"> El café de Guatemala es único por sus múltiples suelos y más de 333 micro climas que caracterizan al país. Esto permite que el sabor de cada finca sea especial e inigualable.</p>
+        <hr>
+        <h3>Las regiones de café de Guatemala son:</h3>
+        <ol>
+            <li>Antigua Guatemala</li>
+            <li>Fraijanes</li>
+            <li>Acatenango</li>
+            <li>San Marcos</li>
+            <li>Cobán</li>
+            <li>Atitlán</li>
+            <li>Nuevo Oriente</li>
+            <li>Huehuetenango</li>
+         </ol>
+         <!--A continuación algunos elementos que se pueden usar-->
+         <!--Cómo hacer citas de un sitio-->
+         <hr>
+         <p id="cita">Citado del sitio de ANACAFE</p>
+         <blockquote cite="https://www.anacafe.org/capacitacion-sellos-RV/">
+            Productores de Huehuetenango fortalecen sus conocimientos sobre sellos y certificaciones de café
+         </blockquote>
+        <!--Cómo poner una dirección-->
+        <hr>
+        <address>
+            Escrito por Stephanie Morales.<br>
+            Visita nuestra página en:<br>
+            www.ejemplo.com<br>
+            18 avenida, Ciudad de Guatemala<br>
+            Guatemala<br>
+            <!--Abrir el programa de correo electrónico de la persona para enviar un correo directamente-->
+            <a href="mailto:smarrazola@example.com">Envía un correo</a>
+        </address>
+        <hr>
+        <!--Cómo hacer abreviaciones-->
+        <p>En Guatemala <abbr title="Asociacion Nacional de Café">ANACAFE</abbr> regula todo lo relacionado al café.</p>
+        <hr>
+        <div class="Coffee types">
+          <h3>Tipos de café en Guatemala</h3>
+          <table>
+            <tr>
+              <th>Especie</th>
+              <th>Variedad</th>
+            </tr>
+            <tr>
+              <td>Arábica</td>
+              <td>Catuaí</td>
+            </tr>
+            <tr>
+              <td>Arábica</td>
+              <td>Caturra</td>
+            </tr>
+            <tr>
+              <td>Arábica</td>
+              <td>Bourbón</td>
+            </tr>
+            <tr>
+              <td>Arábica</td>
+              <td>Pacamara</td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+        <div class="Proceso del cafe">
+          <h3>Proceso del café</h3>
+          <ul style="list-style-type:square;">
+          	<li>Plantación de café</li>
+            <li>Cultivo de café</li>
+            <li>Despulpado</li>
+            <li>Secado</li>
+            <li>Trillado</li>
+            <li>Tueste</li>
+            <li>Molienda</li>
+            <li>Preparación de café</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="en-pagina">
+          <h3>Aquí hay una página con más información sobre los procesos del café</h3>
+          <iframe src="https://cafiver.com/procesos-de-produccion-del-cafe-aspectos-importantes/" height="200" width="800" title="Iframe Example" style="border:none;"></iframe>
+        </div>
+        <hr>
+        <div class="java script ejemplo">
+          <h3>Cambio de color</h3>
+          <p id="java prueba">El café cambia de color al ser tostado y aumenta su volumen</p>
+          <script>
+            function myFunction() {
+  			  document.getElementById("java prueba").style.fontSize = "25px"; 
+  			  document.getElementById("java prueba").style.color = "brown";        
+			}
+ 		  </script>
+          <button type="button" onclick="myFunction()">Igual que si apachas aquí</button>
+        </div>
+    </body>
+</html>
